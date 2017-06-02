@@ -1,0 +1,20 @@
+{
+  "name": "arrombot",
+  "version": "1.0.0",
+  "description": "Arrombot for Discord",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "arrombot",
+    "discord"
+  ],
+  "author": "Skiptir Engu <skiptir.engu@yandex.com>",
+  "license": "WTFPL",
+  "dependencies": {
+    "discordie": "^0.11.0",
+    "winston": "^2.3.1",
+    "youtube-search": "^1.0.9"
+  }
+}
