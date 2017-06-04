@@ -4,7 +4,10 @@
   "description": "Arrombot for Discord",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node index.js &",
+    "stop": "pkill --signal SIGINT arrombot || exit 0",
+    "restart": "npm stop && npm start",
+    "lint": "./node_modules/.bin/eslint lib/ index.js --fix"
   },
   "keywords": [
     "arrombot",
@@ -18,5 +21,8 @@
     "winston": "^2.3.1",
     "youtube-dl": "^1.11.1",
     "youtube-search": "^1.0.9"
+  },
+  "devDependencies": {
+    "eslint": "^3.19.0"
   }
 }

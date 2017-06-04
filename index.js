@@ -1,12 +1,21 @@
-const Discordie = require("discordie");
+'use strict';
+
+process.title = 'arrombot';
+
+const Discordie = require('discordie');
 const commands = require('./lib/commands');
 const log = require('./lib/log');
 
+process.on('unhandledRejection', log.warn);
 const config = require('./config.json');
 const client = new Discordie({ autoReconnect: true });
 
 global.arrombot = Object.assign({}, config);
 client.connect({ token: config.discord_token });
+
+client.Dispatcher.on('GATEWAY_READY', () => {
+  log.info('Successfully inited the bot!');
+});
 
 client.Dispatcher.on('MESSAGE_CREATE', evt => {
   const msg = evt.message;
