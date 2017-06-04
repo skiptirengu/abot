@@ -19,6 +19,8 @@ client.Dispatcher.on('GATEWAY_READY', () => {
 
 client.Dispatcher.on('MESSAGE_CREATE', evt => {
   const msg = evt.message;
+  // ignore own messages
+  if (msg.author.id === client.User.id) return;
   const msgLine = msg.content.split(' ');
   const cmdName = msgLine.shift();
   if (cmdName && commands.hasOwnProperty(cmdName)) {

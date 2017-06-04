@@ -16,7 +16,7 @@
   "author": "Skiptir Engu <skiptir.engu@yandex.com>",
   "license": "WTFPL",
   "dependencies": {
-    "discordie": "^0.11.0",
+    "discordie": "github:qeled/discordie#dev",
     "winston": "^2.3.1",
     "youtube-dl": "^1.11.1",
     "youtube-search": "^1.0.9"
