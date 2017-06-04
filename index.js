@@ -3,10 +3,10 @@ const commands = require('./lib/commands');
 const log = require('./lib/log');
 
 const config = require('./config.json');
-const client = new Discordie({autoReconnect: true});
+const client = new Discordie({ autoReconnect: true });
 
 global.arrombot = Object.assign({}, config);
-client.connect({token: config.discord_token});
+client.connect({ token: config.discord_token });
 
 client.Dispatcher.on('MESSAGE_CREATE', evt => {
   const msg = evt.message;
