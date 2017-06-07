@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "description": "Arrombot for Discord",
   "main": "index.js",
+  "repository": {
+    "url": "https://github.com/skiptirengu/arrombot"
+  },
   "scripts": {
     "start": "node index.js &>> runtime/console.log &",
     "stop": "pkill --signal SIGINT arrombot || exit 0",

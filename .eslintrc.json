@@ -8,6 +8,10 @@
     "arrombot": false
   },
   "rules": {
+    "quote-props": [
+      "error",
+      "as-needed"
+    ],
     "indent": [
       "error",
       2
