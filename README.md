@@ -1,7 +1,7 @@
 # Arrombot
 
 Yet another discord bot.  
-This bot is generic enough for you to use on any discord server, although you gotta host it by yourself :p (I'll think about host it on my droplet and make it public).
+This bot is generic enough for you to use on any discord server, although you gotta host it by yourself :p (I'll think about hosting it on my droplet and make it public).
 
 ### FAQ
 
