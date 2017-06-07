@@ -8,6 +8,10 @@
     "arrombot": false
   },
   "rules": {
+    "eol-last": [
+      "error",
+      "always"
+    ],
     "strict": [
       "error",
       "global"
