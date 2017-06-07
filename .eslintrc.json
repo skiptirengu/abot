@@ -8,6 +8,10 @@
     "arrombot": false
   },
   "rules": {
+    "strict": [
+      "error",
+      "global"
+    ],
     "quote-props": [
       "error",
       "as-needed"
