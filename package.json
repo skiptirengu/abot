@@ -10,7 +10,9 @@
     "start": "node index.js &>> runtime/console.log &",
     "stop": "pkill --signal SIGINT arrombot || exit 0",
     "restart": "npm stop && npm start",
-    "lint": "./node_modules/.bin/eslint lib/ index.js --fix"
+    "lint": "./node_modules/.bin/eslint lib/ index.js",
+    "lint:fix": "./node_modules/.bin/eslint lib/ index.js --fix",
+    "log:clear": "echo \"\" | tee runtime/console.log runtime/arrombot.log"
   },
   "keywords": [
     "arrombot",
@@ -20,7 +22,9 @@
   "license": "WTFPL",
   "dependencies": {
     "a-syncquence": "^1.0.2",
+    "bufferutil": "^3.0.1",
     "discordie": "github:qeled/discordie#dev",
+    "utf-8-validate": "^3.0.2",
     "winston": "^2.3.1",
     "youtube-dl": "^1.11.1",
     "youtube-search": "^1.0.9"
