@@ -14,6 +14,7 @@ global.arrombot = Object.assign({}, config);
 client.connect({ token: config.discord_token });
 
 client.Dispatcher.on('GATEWAY_READY', () => {
+  global.arrombot.client = client;
   log.info('Successfully inited the bot!');
 });
 
