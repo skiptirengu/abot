@@ -6,7 +6,7 @@ This bot is generic enough for you to use on any discord server, although you go
 ### RUNNING THE BOT
 
 1. Clone this repo `git clone https://github.com/skiptirengu/arrombot`
-2. Install the packages `npm install`
+2. Install the packages `yarn install`
 3. Create a `config.json` file in the root directory and place your tokens there
 ```json
 {
@@ -14,9 +14,9 @@ This bot is generic enough for you to use on any discord server, although you go
   "youtube_token": "my_super_secret_youtube_token"
 }
 ```
-4. Start the bot with `npm start`
+4. Start the bot with `yarn start`
 
-The bot logs can be found on the `runtime` directory. The `console.log` file contains the output from stderr and stdout (ffmpeg's output for example), whilst the `arrombot.log` contains logs from the bot itself.
+The bot logs can be found on the `runtime` directory. The `console.log` file contains the output from stderr and stdout (ffmpeg's output for example), whilst the `arrombot.log` contains logs from the bot itself. To clear all log files run `yarn run log:clear`.
 
 ### FAQ
 
