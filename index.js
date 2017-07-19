@@ -22,7 +22,7 @@ client.Dispatcher.on('MESSAGE_CREATE', evt => {
   const msg = evt.message;
   // ignore own messages
   if (msg.author.id === client.User.id) return;
-  const msgLine = msg.content.split(' ');
+  const msgLine = msg.content.split(' ').filter(item => !!item);
   const cmdName = msgLine.shift();
   if (cmdName && commands.hasOwnProperty(cmdName)) {
     const command = commands[cmdName];
