@@ -14,7 +14,7 @@
     "lint:fix": "./node_modules/.bin/eslint lib/ index.js --fix",
     "log:clear": "echo \"\" | tee runtime/console.log runtime/arrombot.log",
     "update:yt": "node ./node_modules/youtube-dl/scripts/download.js",
-    "update:bot": "git fetch && git pull && yarn run log:clear && yarn restart"
+    "update:bot": "git fetch && git pull && yarn restart"
   },
   "keywords": [
     "arrombot",
