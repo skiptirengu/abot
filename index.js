@@ -5,6 +5,7 @@ process.title = 'arrombot';
 const Discordie = require('discordie');
 const commands = require('./lib/commands');
 const log = require('./lib/log');
+const util = require('./lib/util');
 
 process.on('unhandledRejection', log.warn);
 const config = require('./config.json');
@@ -27,6 +28,9 @@ client.Dispatcher.on('MESSAGE_CREATE', evt => {
   if (cmdName && commands.hasOwnProperty(cmdName)) {
     const command = commands[cmdName];
     // message instance, command params, client instance
-    command.run(msg, msgLine, client).catch(log.error);
+    command.run(msg, msgLine, client).catch(err => {
+      const errorMsg = err.toString ? err.toString() : err;
+      log.error({ tag: util.guildTag(msg.guild), message: errorMsg });
+    });
   }
 });
