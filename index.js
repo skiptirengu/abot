@@ -27,7 +27,7 @@ client.Dispatcher.on('MESSAGE_CREATE', evt => {
   const cmdName = msgLine.shift();
   if (cmdName && commands.hasOwnProperty(cmdName)) {
     const command = commands[cmdName];
-    log.info({ tag: util.guildTag(msg.guild), message: 'Cleaning up voice connection.' });
+    log.info({ tag: util.guildTag(msg.guild), message: `Received command ${cmdName}.` });
     // message instance, command params, client instance
     command.run(msg, msgLine, client).catch(err => {
       const errorMsg = err.toString ? err.toString() : err;
