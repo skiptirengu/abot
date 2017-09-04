@@ -27,6 +27,8 @@
     "a-syncquence": "^1.0.2",
     "bufferutil": "^3.0.1",
     "discordie": "github:qeled/discordie#dev",
+    "moment": "^2.18.1",
+    "moment-timezone": "^0.5.13",
     "node-opus": "^0.2.6",
     "utf-8-validate": "^3.0.2",
     "winston": "^2.3.1",
