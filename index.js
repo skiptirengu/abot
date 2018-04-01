@@ -16,7 +16,7 @@ client.connect({ token: config.discord_token });
 
 client.Dispatcher.on('GATEWAY_READY', () => {
   global.arrombot.client = client;
-  setTimeout(() => mentionSomeone, 1.2e+6);
+  setTimeout(mentionSomeone, 1.2e+6);
   mentionSomeone();
   log.info('Successfully inited the bot!');
 });
