@@ -16,8 +16,6 @@ client.connect({ token: config.discord_token });
 
 client.Dispatcher.on('GATEWAY_READY', () => {
   global.arrombot.client = client;
-  setTimeout(mentionSomeone, 1.2e+6);
-  mentionSomeone();
   log.info('Successfully inited the bot!');
 });
 
@@ -37,15 +35,3 @@ client.Dispatcher.on('MESSAGE_CREATE', evt => {
     });
   }
 });
-
-function mentionSomeone() {
-  const guild = client.Guilds.get('222761713844355072');
-  if (guild) {
-    const chan = guild.textChannels.find((chan) => chan.name === 'general');
-    if (chan) {
-      const user = guild.members[Math.floor(Math.random() * guild.members.length)];
-      const tmsg = ['ur mom gay', 'suck my d :tongue: :eggplant:', 'homem moderno'][Math.floor(Math.random() * 3)];
-      chan.sendMessage(`@someone ${user.mention} ${tmsg}`).catch(console.error);
-    }
-  }
-}
