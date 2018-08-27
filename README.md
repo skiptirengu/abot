@@ -7,7 +7,7 @@ To add this bot to your channel visit the [following link](https://discordapp.co
 ### RUNNING THE BOT
 
 1. Clone this repo `git clone https://github.com/skiptirengu/arrombot`
-2. Install the packages `yarn install`
+2. Install the packages `npm install`
 3. Create a `config.json` file in the root directory and place your tokens there
 ```json
 {
@@ -15,7 +15,7 @@ To add this bot to your channel visit the [following link](https://discordapp.co
   "youtube_token": "my_super_secret_youtube_token"
 }
 ```
-4. Start the bot with `yarn start`
+4. Start the bot with `npm start`
 
 The bot logs can be found on the `runtime` directory. The `console.log` file contains the output from stderr and stdout (ffmpeg's output for example), whilst the `arrombot.log` contains logs from the bot itself. To clear all log files run `yarn run log:clear`.
 
