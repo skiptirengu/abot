@@ -25,16 +25,16 @@
   "license": "WTFPL",
   "dependencies": {
     "a-syncquence": "^1.0.2",
-    "bufferutil": "^4.0.0",
+    "bufferutil": "^4.0.1",
     "discordie": "github:skiptirengu/discordie#dev",
-    "moment-timezone": "^0.5.21",
-    "node-opus": "^0.3.0",
-    "utf-8-validate": "^5.0.1",
-    "winston": "^3.1.0",
-    "youtube-dl": "^1.12.2",
-    "youtube-search": "^1.1.1"
+    "moment-timezone": "^0.5.25",
+    "node-opus": "^0.3.2",
+    "utf-8-validate": "^5.0.2",
+    "winston": "^3.2.1",
+    "youtube-dl": "^2.0.0",
+    "youtube-search": "^1.1.4"
   },
   "devDependencies": {
-    "eslint": "^5.6.0"
+    "eslint": "^5.16.0"
   }
 }
