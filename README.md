@@ -1,3 +1,5 @@
+# NEW HYPER MEGA SUPER BETTER VERSION AVAILABLE [HERE](https://github.com/skiptirengu/arrombot)
+
 # Arrombot
 
 Yet another discord bot.  
